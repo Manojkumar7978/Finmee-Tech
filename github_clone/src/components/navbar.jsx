@@ -15,6 +15,7 @@ import { BsGithub } from 'react-icons/bs'
 import { GoIssueOpened, GoGitPullRequest } from 'react-icons/go'
 import { BiNotification } from 'react-icons/bi'
 import Navmodal from './navmodal'
+import Usermodal from './usermodal'
 
 
 export default function Navbar() {
@@ -64,10 +65,12 @@ export default function Navbar() {
                     cursor='pointer'
                     _hover={{ border: '1px solid #8b949e' }}
                 ><HamburgerIcon onClick={onOpen} />
+
+{/* navigation drawer */}
                     <Drawer placement={'left'} onClose={onClose} isOpen={isOpen}
                     >
                         <DrawerOverlay color={'white'} />
-                        <DrawerContent bg={'#161b22'} color={'white'}>
+                        <DrawerContent borderRadius={'10px'} bg={'#161b22'} color={'white'}>
                             <DrawerHeader >
                                 <DrawerCloseButton size={'sm'} color={'#8b949e'} _hover={{ color: 'white' }} bg={'#30363d'} />
                                 <chakra.div id='github_logo' display='grid'
@@ -84,6 +87,10 @@ export default function Navbar() {
                             </DrawerBody>
                         </DrawerContent>
                     </Drawer>
+
+
+
+
                 </chakra.div>
                 <chakra.div id='github_logo' display='grid'
                     cursor='pointer'
@@ -152,7 +159,7 @@ export default function Navbar() {
                         </Tooltip>
                     })
                 }
-                <Avatar id='avatar' cursor='pointer' size='sm' name='Kent Dodds' src='https://bit.ly/kent-c-dodds' />
+                <Usermodal/>
             </chakra.div>
         </Box>
     )

@@ -60,7 +60,7 @@ export default function Navmodal() {
                                 cursor={'pointer'}
                             >
                                 <el.img size={'16px'} color='#8b949e' />
-                                <Text size={'12px'}>{el.text}</Text>
+                                <Text fontSize={'12px'}>{el.text}</Text>
                             </Box>
                         })
                     }
@@ -77,7 +77,7 @@ export default function Navmodal() {
                                 cursor={'pointer'}
                             >
                                 <el.img size={'16px'} color='#8b949e' />
-                                <Text size={'12px'}>{el.text}</Text>
+                                <Text fontSize={'12px'}>{el.text}</Text>
                             </Box>
                         })
                     }
@@ -105,7 +105,7 @@ export default function Navmodal() {
                                     >
                                         <Avatar size='2xs' name={el.reponame} src={el.avatar} />
                                         <chakra.a color={'white'}
-                                            fontSize={'16px'}
+                                            fontSize={'12px'}
 
 
                                         >{el.reponame}</chakra.a>
@@ -130,7 +130,7 @@ export default function Navmodal() {
                                     >
                                         <Avatar size='2xs' name={el.reponame} src={el.avatar} />
                                         <chakra.a color={'white'}
-                                            fontSize={'16px'}
+                                            fontSize={'12px'}
 
 
                                         >{el.reponame}</chakra.a>
@@ -168,7 +168,7 @@ export default function Navmodal() {
                     >
                         <Avatar size='2xs' name={'Teams'} src={'https://avatars.githubusercontent.com/u/103419759?s=88&v=4'} />
                         <chakra.a color={'white'}
-                            fontSize={'16px'}
+                            fontSize={'12px'}
                         >TeamsReponame</chakra.a>
                     </chakra.div>
                 </Box>
