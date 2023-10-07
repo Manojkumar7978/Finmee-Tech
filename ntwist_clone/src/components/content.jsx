@@ -1,6 +1,10 @@
 import React from 'react'
 import { chakra } from '@chakra-ui/react'
 import Cardleft from './cardleft'
+import Cardright from './cardright'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 let data=[
   {
@@ -25,7 +29,7 @@ let data=[
   {
     id:4,
     desc:'Oil and Gas plants require a high level of control and robustness in their operation due to the high risks to people and environment.',
-    desc2:'Oil and Gas plants require a high level of control and robustness in their operation due to the high risks to people and environment.',
+    desc2:'NTWIST helps Oil & Gas customers to analyze historical data, identify opportunities for process control improvements, and reduce variability in any part of the process, thus providing enhanced reliability and safety.',
     url:'https://ntwist.com/wp-content/uploads/2022/03/2021-02-oil-and-gas-digital-hero-e1648984580884-1024x681.png',
     heading:'Oil & Gas'
   },
@@ -36,9 +40,10 @@ export default function Content() {
     <chakra.div padding={'16px'} position={'initial'}>
       {
         data.map((el,ind)=>{
-            return ind%2==1 ? <></> : <>
+            return ind%2==1 ? <div key={el.id} data-aos="fade-up" data-aos-once="true"><Cardright el={el}/></div> :
+             <div key={el.id} data-aos="fade-up" data-aos-once="true">
             <Cardleft el={el}/>
-            </>
+            </div>
         })
       }
 

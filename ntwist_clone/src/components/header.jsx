@@ -27,7 +27,7 @@ export default function Header() {
         left={'50%'}
         maxW={'1200px'}
         W={'90vw'}
-        transform= 'translate(-50%, 50%)'
+        transform= {['translate(-50%, 10%)','translate(-50%, 10%)','translate(-50%, 30%)']}
         display={['block','block','flex']}
         alignItems={'center'}
         justifyContent={'space-between'}
@@ -45,7 +45,7 @@ export default function Header() {
             >Read More</Button>
             </Box>
             <Box>
-                <Image src='https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png'/>
+                <Image maxW={['auto','auto','auto']} w={'auto'} src='https://ntwist.com/wp-content/uploads/2023/01/home-image-icons-v6.png'/>
             </Box>
         </Box>
       

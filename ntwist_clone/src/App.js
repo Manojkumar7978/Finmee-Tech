@@ -2,6 +2,8 @@ import { Box, chakra } from "@chakra-ui/react";
 import Header from "./components/header";
 import './App.css'
 import Content from "./components/content";
+import Footer from "./components/footer";
+import Scrolltotop from "./components/scrolltotop";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         
       </Box>   
       <Content/>
+      <Footer/>
+      <Scrolltotop/>
     </chakra.div>
   );
 }
