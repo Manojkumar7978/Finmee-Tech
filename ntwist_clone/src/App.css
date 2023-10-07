@@ -28,3 +28,19 @@
     opacity: 1;
   }
 }
+.fixed-nav{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeUp2 0.5s ease-in-out forwards;
+}
+@keyframes fadeUp2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

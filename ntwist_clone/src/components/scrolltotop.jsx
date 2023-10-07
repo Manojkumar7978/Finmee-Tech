@@ -16,6 +16,7 @@ export default function Scrolltotop() {
             mr={5}
             bg={'transparent'}
             position={'fixed'}
+            display={'none'}
             zIndex={10}
             bottom={10}
             right={0}
